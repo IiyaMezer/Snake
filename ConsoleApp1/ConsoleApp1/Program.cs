@@ -9,15 +9,20 @@ namespace Snake
     internal class Program
     {
         static void Main(string[] args)
-        {
-            
-            point p1 = new point(1,3,'*');
-           
-            p1.Draw();
+        {           
 
-            point p2 = new point(4,5, '#');
+            hor_line Upline = new hor_line(0, 78, 0, '+');
+            hor_line Downline = new hor_line(0, 78, 24, '+');
+            Ver_line Leftline = new Ver_line(0, 24, 0, '+');
+            Ver_line Rline = new Ver_line(0, 24, 78, '+');
+
+            Upline.Draw();
+            Downline.Draw();
+            Leftline.Draw();
+            Rline.Draw();
             
-            p2.Draw();
+
+
 
             Console.ReadLine();
         }
