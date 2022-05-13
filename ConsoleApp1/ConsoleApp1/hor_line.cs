@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Snake
 {
-    class hor_line
+    class hor_line : figure
     {
-        List<point> plist;
+        
 
         public hor_line(int xL, int xR, int y, char sym)
         {
@@ -20,15 +20,8 @@ namespace Snake
                 plist.Add(p);
             }
           
-
         }
 
-        public void Draw()
-        {
-            foreach (point p in plist)
-            {
-                p.Draw();
-            }
-        }
+      
     }
 }
