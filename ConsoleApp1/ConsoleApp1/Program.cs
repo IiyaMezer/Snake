@@ -21,7 +21,13 @@ namespace Snake
             Leftline.Draw();
             Rline.Draw();
 
+            point p = new point(4, 5, '*');
+
+
             snake snake = new snake(p, 4, direction.right);
+            snake.Draw();
+
+
 
 
 
