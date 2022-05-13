@@ -20,7 +20,8 @@ namespace Snake
             Downline.Draw();
             Leftline.Draw();
             Rline.Draw();
-            
+
+            snake snake = new snake(p, 4, direction.right);
 
 
 

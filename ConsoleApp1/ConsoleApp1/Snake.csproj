@@ -43,11 +43,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="direction.cs" />
     <Compile Include="figure.cs" />
     <Compile Include="hor_line.cs" />
     <Compile Include="point.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="snake.cs" />
     <Compile Include="Ver_line.cs" />
   </ItemGroup>
   <ItemGroup>
