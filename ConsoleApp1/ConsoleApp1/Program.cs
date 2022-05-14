@@ -25,25 +25,25 @@ namespace Snake
 
             Snake snake = new Snake(p, 4, direction.right);
             snake.Draw();
-            snake.Move();
-            Thread.Sleep(300);
-            snake.Move();
-            Thread.Sleep(300);
-            snake.Move();
-            Thread.Sleep(300);
-            snake.Move();
-            Thread.Sleep(300);
-            snake.Move();
-            Thread.Sleep(300);
-            snake.Move();
-            Thread.Sleep(300);
-            snake.Move();
+
+            while (true)
+            {
+                if (Console.KeyAvailable)
+                {
+                    ConsoleKeyInfo key = Console.ReadKey();
+                    snake.ControlKey( key.Key);
+                }
+                
+
+             
+                Thread.Sleep(100);
+                snake.Move();
+            }
 
 
 
 
-
-            Console.ReadLine();
+            
         }
 
     
