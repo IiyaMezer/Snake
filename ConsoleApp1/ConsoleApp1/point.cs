@@ -26,30 +26,40 @@ namespace Snake
             sym = p.sym;
         }
 
+        public point()
+        {
+
+        }
+
         public void Move(int offset, direction direction)
         {
             if (direction == direction.right)
             {
-                x=x+offset;
+                x= x+offset;
             }
             else if (direction == direction.left)
             {
-                x=x-offset;
+                x= x-offset;
             }
-            //else (direction == direction.top)
-            //{
-            //    y=y+offset;
-            //}
-            //else (direction == direction.dowwn)
-            //{
-            //    y = y - offset;
-            //}
+            else if (direction == direction.top)
+            {
+                y = y + offset;
+            }
+            else if (direction == direction.down)
+            {
+                y = y - offset;
+            }
         }
 
         public void Draw()
         {
             Console.SetCursorPosition(x, y);
             Console.Write(sym);
+        }
+
+        public override string ToString()
+        {
+            return x + ", " + y + "," + sym;
         }
     }
 }

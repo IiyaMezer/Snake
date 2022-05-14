@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace Snake
 {
-    class snake : figure
+    class Snake : figure
     {
-        public snake (point tail, int lenght, direction direction)
+        public Snake (point tail, int lenght, direction direction)
         {
+            plist = new List<point> ();
             for(int i = 0; i < lenght; i++)
             {
                 point p = new point (tail);

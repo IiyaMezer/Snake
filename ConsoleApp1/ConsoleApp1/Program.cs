@@ -15,7 +15,6 @@ namespace Snake
             hor_line Downline = new hor_line(0, 78, 24, '+');
             Ver_line Leftline = new Ver_line(0, 24, 0, '+');
             Ver_line Rline = new Ver_line(0, 24, 78, '+');
-
             Upline.Draw();
             Downline.Draw();
             Leftline.Draw();
@@ -24,7 +23,7 @@ namespace Snake
             point p = new point(4, 5, '*');
 
 
-            snake snake = new snake(p, 4, direction.right);
+            Snake snake = new Snake(p, 4, direction.right);
             snake.Draw();
 
 
